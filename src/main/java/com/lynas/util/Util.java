@@ -22,7 +22,10 @@ public class Util {
     public void reportCurrentTime() {
         try {
             Future<User> page1 = gitHubLookupService.findUser("lynas");
-            System.out.println(page1.get());
+            Thread.sleep(5000);
+            if (page1.isDone()){
+                System.out.println(page1.get());
+            }
         } catch (InterruptedException e) {
             System.out.println(e.getMessage());
         } catch (ExecutionException e) {
