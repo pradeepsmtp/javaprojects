@@ -25,7 +25,7 @@ public class HW extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("PA the poor developer at goal");
+		response.getWriter().append("PA the poor developer at goal again");
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
