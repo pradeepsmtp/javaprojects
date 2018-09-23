@@ -11,8 +11,8 @@ public class SoapClient {
 
 		BLZService o = new BLZService();
 		BLZServicePortType p = o.getPort(BLZServicePortType.class);
-		DetailsType d =  p.getBank("86010424") ;
-		System.out.println( " 86010424 D " +d.getBezeichnung()  );
+		DetailsType d =  p.getBank("86010424") ; 
+		System.out.println( " Using code 86010424 D " +d.getBezeichnung()  );
 		System.out.println( " D " +d.getBic()  );
 		System.out.println( " D " +d.getOrt()  );
 		System.out.println( " D " +d.getPlz()  );
